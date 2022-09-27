@@ -7,9 +7,11 @@ Members:
 
 Overview:
   ● Wordle-like website but for video games.
+	
   ● The player guesses a game and is shown different category boxes (e.g 
   Release Date, Company, Genre, Rating, Platform) that vary from red, 
   orange, and green (wrong, partial, correct)
+	
   ● A new game to guess is changed daily, and a catalogue of previous days is 
   provided.
   
