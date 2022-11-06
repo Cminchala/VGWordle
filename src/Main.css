@@ -1,0 +1,25 @@
+.tree [type= text]{
+   
+    height: 50px;
+    width: 40px;
+    text-align: center;
+    font-size: 2em;
+    background-color: rgb(255, 255, 255);
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 2px;
+
+    
+   
+}
+
+.g{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
