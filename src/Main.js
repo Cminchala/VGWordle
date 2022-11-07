@@ -96,38 +96,38 @@ const Catalog = () => (
       <h1>Catalog</h1>
     </div>
 );
-const GameTest = () => ( //also for testing purposes but must be changed completely 
-  <div className= 'game'> 
-      <form align ="center" className = "tree">
-    {gamePrint}
-    <button className ="g">Verify</button>
-  </form> 
-  <form align ="center" className = "tree">
-    {gamePrint}
-    <button className ="g">Verify</button>
-  </form> 
-  <form align ="center" className = "tree">
-    {gamePrint}
-    <button className ="g">Verify</button>
-  </form> 
-  <form align ="center" className = "tree">
-    {gamePrint}
-    <button className ="g">Verify</button>
-  </form> 
-  <form align ="center" className = "tree">
-    {gamePrint}
-    <button className ="g">Verify</button>
-  </form> 
+// const GameTest = () => ( //also for testing purposes but must be changed completely 
+//   <div className= 'game'> 
+//       <form align ="center" className = "tree">
+//     {gamePrint}
+//     <button className ="g">Verify</button>
+//   </form> 
+//   <form align ="center" className = "tree">
+//     {gamePrint}
+//     <button className ="g">Verify</button>
+//   </form> 
+//   <form align ="center" className = "tree">
+//     {gamePrint}
+//     <button className ="g">Verify</button>
+//   </form> 
+//   <form align ="center" className = "tree">
+//     {gamePrint}
+//     <button className ="g">Verify</button>
+//   </form> 
+//   <form align ="center" className = "tree">
+//     {gamePrint}
+//     <button className ="g">Verify</button>
+//   </form> 
   
-  </div>
+//   </div>
 
-)
+// )
 
 const Main = () => (
   <Routes>
     <Route end path='/' element={<Home />}></Route>
     <Route end path='/catalog' element={<Catalog />}></Route>
-    <Route end path='/game' element = {<GameTest />}></Route>
+    {/* <Route end path='/game' element = {<GameTest />}></Route> */}
   </Routes>
 );
 
