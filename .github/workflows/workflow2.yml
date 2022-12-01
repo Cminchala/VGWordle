@@ -17,7 +17,7 @@ jobs:
           node-version: '16'
       
       - name: Install Modules
-        run: npm install
+        run: npm run install
       
       
       - name: Unit Tests
