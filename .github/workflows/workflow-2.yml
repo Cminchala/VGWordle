@@ -9,18 +9,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-      - run: https://github.com/marketplace/actions/checkout
-      - uses: actions/checkout@v3
+        uses: actions/checkout@v3
     
       - name: Setup Node.js
-      - run: https://github.com/marketplace/actions/setup-node-js-environment
-      - uses: actions/setup-node@v3
+        uses: actions/setup-node@v3
         with:
           node-version: '16'
       
       - name: Install Modules
-      - run: npm run install
+        run: npm run install
       
       
       - name: Unit Tests
-      - run: npm run checkpoint3
+        run: npm run checkpoint3
