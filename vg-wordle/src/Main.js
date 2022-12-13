@@ -83,7 +83,7 @@ const Home = () => (
     <ComboBox />
   </div>
   <div className = "game">
-  <h2 className='name'>Testing word {name} Note press space bar on one of the boxes [ Will change ] </h2>
+  <h2 className='name'>Testing word {name} Note press space bar where box is empty</h2>
   <br/> <br />
   
   <form align ="center" className = "tree">
