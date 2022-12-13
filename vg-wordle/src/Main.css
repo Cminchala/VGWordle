@@ -6,12 +6,29 @@
     font-size: 2em;
     background-color: rgb(255, 255, 255);
     margin-right: 20px;
+    margin-bottom: 30px;
     border-radius: 10px;
     padding: 2px;
+   
+    box-shadow: 8.0px 16.0px 16.0px rgba(9, 114, 155, 0.25);
 
-    
    
 }
+
+.game{
+    background : #042631;
+}
+.name {
+    color : #ffffff;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    
+
+}
+
 
 .g{
     background-color: #4CAF50; /* Green */

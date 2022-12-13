@@ -43,25 +43,31 @@ const gameCatalog = ["The Legend of Zelda: Ocarina of Time",  //Array without la
 "Disco Elysium"
 ];
 let gamePrint = [];
+let name = gameCatalog[Math.floor(Math.random() * 10)]; //Random 
 
-for(let i = 0; i < gameCatalog[9].length;i++){ // pushes to the new array 
+for(let i = 0; i < name.length;i++){ // pushes to the new array 
   gamePrint.push(<input type= "text" maxlength = "1"/>)
 }
 
 
+
+
+
+
+
 const IfTrue = () => { // 
+
   let arr = document.getElementsByTagName("input");
   let string = "";
   for(let i = 0; i < arr.length;i++){//adds player input into one whole string
      
       string += arr[i].value;
   }
-
-  if(string === gameCatalog[9]){
-    return alert("You guess correctly");
-    }
+  if(string === name){
+    return alert("Correct")
+  }
     else{
-      return alert("You guess Incorrectly try again")
+      return alert("Incorrect")
     }
     // return alert(string) for testing purposes comment out the top 
 
@@ -69,23 +75,39 @@ const IfTrue = () => { //
 }
 
 
-
-
-
 const Home = () => (
+  
   <>
   <div className='home'>
     <h1>Guess The Game</h1>
     <ComboBox />
   </div>
-  <h2>Testing word Disco Elysium Note press space bar on one of the boxes [ Will change ] </h2>
+  <div className = "game">
+  <h2 className='name'>Testing word {name} Note press space bar on one of the boxes [ Will change ] </h2>
   <br/> <br />
+  
   <form align ="center" className = "tree">
+  
+    {gamePrint}
+    <button className ="g" onClick={IfTrue}>Verify</button>
+    <br/> <br />
+    {gamePrint}
+    <button className ="g" onClick={IfTrue}>Verify</button>
+    <br/> <br />
+    {gamePrint}
+    <button className ="g" onClick={IfTrue}>Verify</button>
+    <br/> <br />
+    {gamePrint}
+    <button className ="g" onClick={IfTrue}>Verify</button>
+    <br/> <br />
     {gamePrint}
     <button className ="g" onClick={IfTrue}>Verify</button>
   </form> 
+
   
 
+  
+  </div>
 </>
 );
 
