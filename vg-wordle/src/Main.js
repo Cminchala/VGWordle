@@ -46,7 +46,7 @@ let gamePrint = [];
 let name = gameCatalog[Math.floor(Math.random() * 10)]; //Random 
 
 for(let i = 0; i < name.length;i++){ // pushes to the new array 
-  gamePrint.push(<input type= "text" maxlength = "1"/>)
+  gamePrint.push(<input className='r' type= "text" maxlength = "1"/>)
 }
 
 
@@ -64,10 +64,22 @@ const IfTrue = () => { //
       string += arr[i].value;
   }
   if(string === name){
-    return alert("Correct")
+      document.getElementsByClassName("name")[0].innerHTML = "Correct Refresh to a new word"
+      for (let i = 0; i < arr.length; i++) {
+      document.getElementsByClassName("r")[i].style.backgroundColor = "green"
+      }
+       
+    
   }
     else{
-      return alert("Incorrect")
+
+      document.getElementsByClassName("name")[0].innerHTML = "Incorrect Refresh to Try Again"
+      for (let i = 0; i < arr.length; i++) {
+      document.getElementsByClassName("r")[i].style.backgroundColor = "red"
+      }
+       
+
+
     }
     // return alert(string) for testing purposes comment out the top 
 
@@ -89,19 +101,19 @@ const Home = () => (
   <form align ="center" className = "tree">
   
     {gamePrint}
-    <button className ="g" onClick={IfTrue}>Verify</button>
+    <button type ='button' className ="g" onClick={IfTrue}>Verify</button>
     <br/> <br />
     {gamePrint}
-    <button className ="g" onClick={IfTrue}>Verify</button>
+    <button type ='button' className ="g" onClick={IfTrue}>Verify</button>
     <br/> <br />
     {gamePrint}
-    <button className ="g" onClick={IfTrue}>Verify</button>
+    <button type ='button' className ="g" onClick={IfTrue}>Verify</button>
     <br/> <br />
     {gamePrint}
-    <button className ="g" onClick={IfTrue}>Verify</button>
+    <button type ='button' className ="g" onClick={IfTrue}>Verify</button>
     <br/> <br />
     {gamePrint}
-    <button className ="g" onClick={IfTrue}>Verify</button>
+    <button type ='button' className ="g" onClick={IfTrue}>Verify</button>
   </form> 
 
   
