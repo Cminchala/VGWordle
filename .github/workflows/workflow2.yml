@@ -15,6 +15,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '16'
-    
+      
+      - name: Install Modules
+        run: npm run install
+      
+      
       - name: Unit Tests
         run: npm run checkpoint3
