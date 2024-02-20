@@ -10,8 +10,8 @@ Members:
 Overview:
   <br />&nbsp;&nbsp;● Wordle-like website but for video games at the moment its more like a guessing the word type game than a Wordle.
   <br />&nbsp;&nbsp;● The player guesses a game and is shown different category boxes (e.g 
-  &nbsp;&nbsp;Release Date, Company, Genre, Rating, Platform) that vary from red, 
-  &nbsp;&nbsp;Red and green (wrong, correct)
+  &nbsp;&nbsp;Release Date, Company, Genre, Rating, Platform) that vary from red
+  &nbsp;&nbsp;and green (wrong, correct)
 
 Target User:
   <br />&nbsp;&nbsp;● Anyone interested in video games as a hobby and testing their knowledge
